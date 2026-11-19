@@ -1,0 +1,114 @@
+name: IsoTrack
+options:
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+# Team and bundle id live in Config/IsoTrack.xcconfig, with personal
+# overrides in the git-ignored Config/Local.xcconfig.
+configFiles:
+  Debug: Config/IsoTrack.xcconfig
+  Release: Config/IsoTrack.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "2.0"
+    CURRENT_PROJECT_VERSION: "2"
+schemes:
+  IsoTrack:
+    build:
+      targets:
+        IsoTrack: all
+    test:
+      targets:
+        - IsoTrackTests
+        - IsoTrackUITests
+targets:
+  IsoTrackTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - IsoTrackTests
+    dependencies:
+      - target: IsoTrack
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: $(ISOTRACK_BUNDLE_ID).tests
+        CODE_SIGN_STYLE: Automatic
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/IsoTrack.app/IsoTrack"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  IsoTrackUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - IsoTrackUITests
+    dependencies:
+      - target: IsoTrack
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: $(ISOTRACK_BUNDLE_ID).uitests
+        CODE_SIGN_STYLE: Automatic
+  IsoTrackWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - IsoTrackWidget
+      - Shared
+    info:
+      path: IsoTrackWidget/Info.plist
+      properties:
+        CFBundleDisplayName: IsoTrack
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        IsoTrackAppGroup: "group.$(ISOTRACK_BUNDLE_ID)"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: IsoTrackWidget/IsoTrackWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.$(ISOTRACK_BUNDLE_ID)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(ISOTRACK_BUNDLE_ID).widget
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        SKIP_INSTALL: YES
+  IsoTrack:
+    type: application
+    platform: iOS
+    sources:
+      - IsoTrack
+      - Shared
+    dependencies:
+      - target: IsoTrackWidget
+    entitlements:
+      path: IsoTrack/IsoTrack.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.$(ISOTRACK_BUNDLE_ID)
+    info:
+      path: IsoTrack/Info.plist
+      properties:
+        CFBundleDisplayName: IsoTrack
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        IsoTrackAppGroup: "group.$(ISOTRACK_BUNDLE_ID)"
+        # Launch on the app's own ink-navy canvas instead of a white flash.
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        # Every orientation: the Duo's outer display is used in landscape
+        # when the phone is propped open, and its inner display ignores this.
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(ISOTRACK_BUNDLE_ID)
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_USER_SCRIPT_SANDBOXING: YES

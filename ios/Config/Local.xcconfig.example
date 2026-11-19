@@ -1,0 +1,8 @@
+// Copy to Local.xcconfig (git-ignored) and fill in.
+
+// A reverse-DNS id that's unique to you, e.g. com.yourname.isotrack
+ISOTRACK_BUNDLE_ID = com.yourname.isotrack
+
+// Your Apple Developer Team ID (Xcode → Settings → Accounts, or
+// developer.apple.com → Membership details).
+DEVELOPMENT_TEAM = ABCDE12345

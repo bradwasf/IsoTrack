@@ -1,0 +1,31 @@
+name: Bug report
+description: Something isn't working as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please don't paste your real dose history, weight or other health details. Describe the problem with made-up numbers instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Today
+        2. Tap ...
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPhone Duo, iOS 27.1 (open / closed)
+  - type: input
+    id: version
+    attributes:
+      label: IsoTrack version or commit

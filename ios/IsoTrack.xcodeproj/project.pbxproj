@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C29B82F86E8CD55FE723DAD /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1F34AB8FC428D64E6C8 /* Palette.swift */; };
+		0D87E22D92C20C4004BCE862 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D1C68B2FDE8B9F7C04524 /* AppStore.swift */; };
+		13B726F1C373B49DF2DEE9C1 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB99D520D341CFB745B4B8 /* AppShortcuts.swift */; };
+		150215C81B8410B378172A35 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C386DEC8ADEB6FC6B999CD /* Models.swift */; };
+		3DBCE590ACB34CA7832E6A1F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CADAFE76B3F79D73AA924B /* SettingsView.swift */; };
+		46E071624DD49F6856A3AD10 /* LogDoseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C389EE64E83EAFC82B8A09 /* LogDoseIntent.swift */; };
+		47EE78B40B32165A7889BBD7 /* CourseMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE66AB935FEE4F4D1AE8BDC /* CourseMath.swift */; };
+		50BCC73C7CC19BE6629D1DFE /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599BA24E03A939244DC76B1 /* SharedStore.swift */; };
+		528A225223AA26BBA4B92BF3 /* JourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F914E0DC860CF762C4D0404 /* JourneyView.swift */; };
+		52D59A3C4FAFD9776BD01080 /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D049A15E48544D123469E /* Confetti.swift */; };
+		5EFBB6F774DC906B52B0107B /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599BA24E03A939244DC76B1 /* SharedStore.swift */; };
+		5F9B9D95045E8525155663E0 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBEA775543C201E016C9D34 /* ReminderManager.swift */; };
+		67A225379069AF3DA57A1E9A /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF962BE232BD3245F62100C /* Motion.swift */; };
+		6866CA792ED0E713647BAD2F /* IsoTrackWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A21924FF31C717A9A823A2 /* IsoTrackWidget.swift */; };
+		6B5335512B4DD84219D72BAF /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F5F1F34AB8FC428D64E6C8 /* Palette.swift */; };
+		6C08CB148A0B3DC1BFCF87C3 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348BEC73E1A0A63011D4193 /* TodayView.swift */; };
+		7345A89316A12315F3F91EA7 /* CourseMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D873B7ED77260488661157B /* CourseMathTests.swift */; };
+		7408E8058218AE328E5F6610 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C386DEC8ADEB6FC6B999CD /* Models.swift */; };
+		786438D6ECA06C9CE10EEBA1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016CB6C03957589E74C053C /* RootView.swift */; };
+		866B45BF8962158F0FC34335 /* CourseMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE66AB935FEE4F4D1AE8BDC /* CourseMath.swift */; };
+		950D73FF3A54F75EF7A525A0 /* IsoTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BC1A7E5B944EC064056D2A /* IsoTrackUITests.swift */; };
+		A10DAF5277BE35143E3BA3C6 /* IsoTrackWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F1A2D2AB605D112017F99DB5 /* IsoTrackWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5BEFEFA0D839233242A30BF /* CheckIns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B85E025A28F81DA5F6A1B /* CheckIns.swift */; };
+		ABFD7F95C0B084D401628EBB /* DoseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C591C2655D43DA88F1D67E4 /* DoseLogger.swift */; };
+		B28CFE7624A641DA45921AA7 /* DaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13F8FD1E91E9CC78FDA8A1 /* DaySheet.swift */; };
+		BBDD9F0D512DB6287390A6B8 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF87434FE7A7E6BE7F0157 /* ScheduleView.swift */; };
+		BFADB76022E02915CB53E0A3 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB28D12A49F88701C259A98 /* Components.swift */; };
+		C2BAF2168A189D19AB7AB426 /* CareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C7336CD9C33CCB953BB47 /* CareView.swift */; };
+		C78BA49789CF4358CD7A7E68 /* DoseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C591C2655D43DA88F1D67E4 /* DoseLogger.swift */; };
+		D2705DEC6B9EB71325478F96 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC0F49CA35D67F7C0DCC8E /* PersistenceTests.swift */; };
+		D3FCD9B233AA867805C9FD51 /* IsoTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFD8238811E4EAA583DB29 /* IsoTrackApp.swift */; };
+		D867E06620CCEF782D81E154 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4FF3EA1C694C4E495AA40 /* OnboardingView.swift */; };
+		DF1B45E30A177DF3E4B2FB62 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887981B3420D6D3B7C55ABE /* Theme.swift */; };
+		E15937EC2037495869C33592 /* LogDoseIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C389EE64E83EAFC82B8A09 /* LogDoseIntent.swift */; };
+		FA9ED72C868FA29CC99831FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2143782E1E8EA36BA79FF0DE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAB31ED332A6E1E4D8983A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC54F8DA75D925CD85D7D335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1C16F6337694663CCE62D1;
+			remoteInfo = IsoTrack;
+		};
+		E2E4911E97F2617CC5725FB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC54F8DA75D925CD85D7D335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E2743686A5B8F8429D4F2F;
+			remoteInfo = IsoTrackWidget;
+		};
+		E53CD2CFB121873FC4E51EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC54F8DA75D925CD85D7D335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1C16F6337694663CCE62D1;
+			remoteInfo = IsoTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06C03E563C6E9DA5B7605741 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10DAF5277BE35143E3BA3C6 /* IsoTrackWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0887981B3420D6D3B7C55ABE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		11F5F1F34AB8FC428D64E6C8 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		1A13F8FD1E91E9CC78FDA8A1 /* DaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySheet.swift; sourceTree = "<group>"; };
+		1E7B85E025A28F81DA5F6A1B /* CheckIns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIns.swift; sourceTree = "<group>"; };
+		2143782E1E8EA36BA79FF0DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AB28D12A49F88701C259A98 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		3F7BE52A9FA0BD4A3C133A90 /* IsoTrackTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IsoTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A21924FF31C717A9A823A2 /* IsoTrackWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoTrackWidget.swift; sourceTree = "<group>"; };
+		47BB99D520D341CFB745B4B8 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		4B5D1C68B2FDE8B9F7C04524 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		4F914E0DC860CF762C4D0404 /* JourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyView.swift; sourceTree = "<group>"; };
+		5C591C2655D43DA88F1D67E4 /* DoseLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseLogger.swift; sourceTree = "<group>"; };
+		61C386DEC8ADEB6FC6B999CD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		67AF87434FE7A7E6BE7F0157 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		6BDC0F49CA35D67F7C0DCC8E /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		722C7336CD9C33CCB953BB47 /* CareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareView.swift; sourceTree = "<group>"; };
+		77BD2D02B05CB56E53DD541E /* IsoTrackWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IsoTrackWidget.entitlements; sourceTree = "<group>"; };
+		7A315477664DE75310B5A3F0 /* IsoTrack.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IsoTrack.xcconfig; sourceTree = "<group>"; };
+		7D873B7ED77260488661157B /* CourseMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMathTests.swift; sourceTree = "<group>"; };
+		7DF962BE232BD3245F62100C /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		7F41210AB71239C46C3D4F43 /* IsoTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = IsoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBEA775543C201E016C9D34 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		92F3AFC6288C1595C2437E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9348BEC73E1A0A63011D4193 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		B4C389EE64E83EAFC82B8A09 /* LogDoseIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDoseIntent.swift; sourceTree = "<group>"; };
+		B5E4FF3EA1C694C4E495AA40 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BB7C099F357FE3015D825E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6BC1A7E5B944EC064056D2A /* IsoTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoTrackUITests.swift; sourceTree = "<group>"; };
+		CC8F4EE06FB89B8723E3C2F7 /* IsoTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IsoTrack.entitlements; sourceTree = "<group>"; };
+		D599BA24E03A939244DC76B1 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		D956DD39481A4E478C886E43 /* IsoTrackUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IsoTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACFD8238811E4EAA583DB29 /* IsoTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsoTrackApp.swift; sourceTree = "<group>"; };
+		DBE66AB935FEE4F4D1AE8BDC /* CourseMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMath.swift; sourceTree = "<group>"; };
+		DD4D049A15E48544D123469E /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
+		F016CB6C03957589E74C053C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F1A2D2AB605D112017F99DB5 /* IsoTrackWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = IsoTrackWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CADAFE76B3F79D73AA924B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0677FB6AE1DB8F746FE0A666 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				1A13F8FD1E91E9CC78FDA8A1 /* DaySheet.swift */,
+				9348BEC73E1A0A63011D4193 /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		2A049E7A329BA97336083D61 /* IsoTrack */ = {
+			isa = PBXGroup;
+			children = (
+				2143782E1E8EA36BA79FF0DE /* Assets.xcassets */,
+				92F3AFC6288C1595C2437E2F /* Info.plist */,
+				CC8F4EE06FB89B8723E3C2F7 /* IsoTrack.entitlements */,
+				516AD1271067D768C61CA6AE /* App */,
+				671AC2BD3B6A63D27E8D7D7D /* Design */,
+				A586F22821B507501EB92B08 /* Features */,
+			);
+			path = IsoTrack;
+			sourceTree = "<group>";
+		};
+		2B923CCA8C4C73E29FBE1E4A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7A315477664DE75310B5A3F0 /* IsoTrack.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2C7A8DE92C1768AD32824097 /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				4F914E0DC860CF762C4D0404 /* JourneyView.swift */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		48F41ECD5C43CA9185FFF09E /* IsoTrackWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BB7C099F357FE3015D825E4C /* Info.plist */,
+				77BD2D02B05CB56E53DD541E /* IsoTrackWidget.entitlements */,
+				43A21924FF31C717A9A823A2 /* IsoTrackWidget.swift */,
+			);
+			path = IsoTrackWidget;
+			sourceTree = "<group>";
+		};
+		516AD1271067D768C61CA6AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				47BB99D520D341CFB745B4B8 /* AppShortcuts.swift */,
+				4B5D1C68B2FDE8B9F7C04524 /* AppStore.swift */,
+				DACFD8238811E4EAA583DB29 /* IsoTrackApp.swift */,
+				8BBEA775543C201E016C9D34 /* ReminderManager.swift */,
+				F016CB6C03957589E74C053C /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5370E9713580933CC627A76B = {
+			isa = PBXGroup;
+			children = (
+				2B923CCA8C4C73E29FBE1E4A /* Config */,
+				2A049E7A329BA97336083D61 /* IsoTrack */,
+				A276818B86A3087BD513FF54 /* IsoTrackTests */,
+				A997BF08B12E8C9F1EDB9B22 /* IsoTrackUITests */,
+				48F41ECD5C43CA9185FFF09E /* IsoTrackWidget */,
+				8CC3E9C5F6F178D05242ED71 /* Shared */,
+				7EEF0F8400727ED7329CFA2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		671AC2BD3B6A63D27E8D7D7D /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				3AB28D12A49F88701C259A98 /* Components.swift */,
+				DD4D049A15E48544D123469E /* Confetti.swift */,
+				7DF962BE232BD3245F62100C /* Motion.swift */,
+				0887981B3420D6D3B7C55ABE /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		6C9ACEAF343527E68A59AE73 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				67AF87434FE7A7E6BE7F0157 /* ScheduleView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		70F220DAE521E615A767530E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F9CADAFE76B3F79D73AA924B /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7EEF0F8400727ED7329CFA2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F41210AB71239C46C3D4F43 /* IsoTrack.app */,
+				3F7BE52A9FA0BD4A3C133A90 /* IsoTrackTests.xctest */,
+				D956DD39481A4E478C886E43 /* IsoTrackUITests.xctest */,
+				F1A2D2AB605D112017F99DB5 /* IsoTrackWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CC3E9C5F6F178D05242ED71 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DBE66AB935FEE4F4D1AE8BDC /* CourseMath.swift */,
+				5C591C2655D43DA88F1D67E4 /* DoseLogger.swift */,
+				B4C389EE64E83EAFC82B8A09 /* LogDoseIntent.swift */,
+				61C386DEC8ADEB6FC6B999CD /* Models.swift */,
+				11F5F1F34AB8FC428D64E6C8 /* Palette.swift */,
+				D599BA24E03A939244DC76B1 /* SharedStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		904323EEAFF2A75FB3DFFE80 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4FF3EA1C694C4E495AA40 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A276818B86A3087BD513FF54 /* IsoTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D873B7ED77260488661157B /* CourseMathTests.swift */,
+				6BDC0F49CA35D67F7C0DCC8E /* PersistenceTests.swift */,
+			);
+			path = IsoTrackTests;
+			sourceTree = "<group>";
+		};
+		A586F22821B507501EB92B08 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6944BED67A71559478CE2 /* Care */,
+				2C7A8DE92C1768AD32824097 /* Journey */,
+				904323EEAFF2A75FB3DFFE80 /* Onboarding */,
+				6C9ACEAF343527E68A59AE73 /* Schedule */,
+				70F220DAE521E615A767530E /* Settings */,
+				0677FB6AE1DB8F746FE0A666 /* Today */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A997BF08B12E8C9F1EDB9B22 /* IsoTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC1A7E5B944EC064056D2A /* IsoTrackUITests.swift */,
+			);
+			path = IsoTrackUITests;
+			sourceTree = "<group>";
+		};
+		FBA6944BED67A71559478CE2 /* Care */ = {
+			isa = PBXGroup;
+			children = (
+				722C7336CD9C33CCB953BB47 /* CareView.swift */,
+				1E7B85E025A28F81DA5F6A1B /* CheckIns.swift */,
+			);
+			path = Care;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1C16F6337694663CCE62D1 /* IsoTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD36F84A1E851C6692800E3 /* Build configuration list for PBXNativeTarget "IsoTrack" */;
+			buildPhases = (
+				6476719C632C2CB8D6309525 /* Sources */,
+				E0F6B2599DE320886247B70A /* Resources */,
+				06C03E563C6E9DA5B7605741 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC1F1F857BA0E6F086FF9F75 /* PBXTargetDependency */,
+			);
+			name = IsoTrack;
+			packageProductDependencies = (
+			);
+			productName = IsoTrack;
+			productReference = 7F41210AB71239C46C3D4F43 /* IsoTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CBE94A3BD55204528D1CD05 /* IsoTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B401A66782FBB18D9CC01F /* Build configuration list for PBXNativeTarget "IsoTrackUITests" */;
+			buildPhases = (
+				ACB30894DAAF0B2B7128AF51 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62D199BDFC2EBEABA3A8414 /* PBXTargetDependency */,
+			);
+			name = IsoTrackUITests;
+			packageProductDependencies = (
+			);
+			productName = IsoTrackUITests;
+			productReference = D956DD39481A4E478C886E43 /* IsoTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C6E2743686A5B8F8429D4F2F /* IsoTrackWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043D4152D2503211468EA2AE /* Build configuration list for PBXNativeTarget "IsoTrackWidget" */;
+			buildPhases = (
+				D5E2F1CB4905C5529907712F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IsoTrackWidget;
+			packageProductDependencies = (
+			);
+			productName = IsoTrackWidget;
+			productReference = F1A2D2AB605D112017F99DB5 /* IsoTrackWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DC2D3EAD4B50EC2FA8D682CC /* IsoTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD974492854174A60923EF24 /* Build configuration list for PBXNativeTarget "IsoTrackTests" */;
+			buildPhases = (
+				E744CDCE16EBB7F116D3BC7B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				434C31435F7DC3BB63D391B5 /* PBXTargetDependency */,
+			);
+			name = IsoTrackTests;
+			packageProductDependencies = (
+			);
+			productName = IsoTrackTests;
+			productReference = 3F7BE52A9FA0BD4A3C133A90 /* IsoTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC54F8DA75D925CD85D7D335 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1A1C16F6337694663CCE62D1 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					7CBE94A3BD55204528D1CD05 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A1C16F6337694663CCE62D1;
+					};
+					C6E2743686A5B8F8429D4F2F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					DC2D3EAD4B50EC2FA8D682CC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C44F7D238F6D89304946940C /* Build configuration list for PBXProject "IsoTrack" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5370E9713580933CC627A76B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7EEF0F8400727ED7329CFA2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC2D3EAD4B50EC2FA8D682CC /* IsoTrackTests */,
+				7CBE94A3BD55204528D1CD05 /* IsoTrackUITests */,
+				C6E2743686A5B8F8429D4F2F /* IsoTrackWidget */,
+				1A1C16F6337694663CCE62D1 /* IsoTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0F6B2599DE320886247B70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9ED72C868FA29CC99831FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6476719C632C2CB8D6309525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B726F1C373B49DF2DEE9C1 /* AppShortcuts.swift in Sources */,
+				0D87E22D92C20C4004BCE862 /* AppStore.swift in Sources */,
+				C2BAF2168A189D19AB7AB426 /* CareView.swift in Sources */,
+				A5BEFEFA0D839233242A30BF /* CheckIns.swift in Sources */,
+				BFADB76022E02915CB53E0A3 /* Components.swift in Sources */,
+				52D59A3C4FAFD9776BD01080 /* Confetti.swift in Sources */,
+				866B45BF8962158F0FC34335 /* CourseMath.swift in Sources */,
+				B28CFE7624A641DA45921AA7 /* DaySheet.swift in Sources */,
+				ABFD7F95C0B084D401628EBB /* DoseLogger.swift in Sources */,
+				D3FCD9B233AA867805C9FD51 /* IsoTrackApp.swift in Sources */,
+				528A225223AA26BBA4B92BF3 /* JourneyView.swift in Sources */,
+				46E071624DD49F6856A3AD10 /* LogDoseIntent.swift in Sources */,
+				7408E8058218AE328E5F6610 /* Models.swift in Sources */,
+				67A225379069AF3DA57A1E9A /* Motion.swift in Sources */,
+				D867E06620CCEF782D81E154 /* OnboardingView.swift in Sources */,
+				0C29B82F86E8CD55FE723DAD /* Palette.swift in Sources */,
+				5F9B9D95045E8525155663E0 /* ReminderManager.swift in Sources */,
+				786438D6ECA06C9CE10EEBA1 /* RootView.swift in Sources */,
+				BBDD9F0D512DB6287390A6B8 /* ScheduleView.swift in Sources */,
+				3DBCE590ACB34CA7832E6A1F /* SettingsView.swift in Sources */,
+				50BCC73C7CC19BE6629D1DFE /* SharedStore.swift in Sources */,
+				DF1B45E30A177DF3E4B2FB62 /* Theme.swift in Sources */,
+				6C08CB148A0B3DC1BFCF87C3 /* TodayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB30894DAAF0B2B7128AF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950D73FF3A54F75EF7A525A0 /* IsoTrackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E2F1CB4905C5529907712F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EE78B40B32165A7889BBD7 /* CourseMath.swift in Sources */,
+				C78BA49789CF4358CD7A7E68 /* DoseLogger.swift in Sources */,
+				6866CA792ED0E713647BAD2F /* IsoTrackWidget.swift in Sources */,
+				E15937EC2037495869C33592 /* LogDoseIntent.swift in Sources */,
+				150215C81B8410B378172A35 /* Models.swift in Sources */,
+				6B5335512B4DD84219D72BAF /* Palette.swift in Sources */,
+				5EFBB6F774DC906B52B0107B /* SharedStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E744CDCE16EBB7F116D3BC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7345A89316A12315F3F91EA7 /* CourseMathTests.swift in Sources */,
+				D2705DEC6B9EB71325478F96 /* PersistenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		434C31435F7DC3BB63D391B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1C16F6337694663CCE62D1 /* IsoTrack */;
+			targetProxy = AAB31ED332A6E1E4D8983A8E /* PBXContainerItemProxy */;
+		};
+		C62D199BDFC2EBEABA3A8414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1C16F6337694663CCE62D1 /* IsoTrack */;
+			targetProxy = E53CD2CFB121873FC4E51EEA /* PBXContainerItemProxy */;
+		};
+		CC1F1F857BA0E6F086FF9F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6E2743686A5B8F8429D4F2F /* IsoTrackWidget */;
+			targetProxy = E2E4911E97F2617CC5725FB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EBCB66CD813D086BC52050C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsoTrack.app/IsoTrack";
+			};
+			name = Debug;
+		};
+		17AB78DF4C6C92491901D371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A315477664DE75310B5A3F0 /* IsoTrack.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26FCACD9BEDE337D84089B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IsoTrackWidget/IsoTrackWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IsoTrackWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		83EDBFA5933EAFCFA2B006D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IsoTrack/IsoTrack.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = IsoTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		86C6B0262640EFF64B94A71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A315477664DE75310B5A3F0 /* IsoTrack.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8C5C6743D43FEBFF45A3B471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IsoTrackWidget/IsoTrackWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IsoTrackWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95F927552E96C60656F0B580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IsoTrack;
+			};
+			name = Debug;
+		};
+		B2FBB30C904B22A183C36FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsoTrack.app/IsoTrack";
+			};
+			name = Release;
+		};
+		ED802ED58ED9EB7651E74CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID).uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IsoTrack;
+			};
+			name = Release;
+		};
+		FE4D8C58712F4738D79A1E3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IsoTrack/IsoTrack.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				INFOPLIST_FILE = IsoTrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(ISOTRACK_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043D4152D2503211468EA2AE /* Build configuration list for PBXNativeTarget "IsoTrackWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C5C6743D43FEBFF45A3B471 /* Debug */,
+				26FCACD9BEDE337D84089B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		16B401A66782FBB18D9CC01F /* Build configuration list for PBXNativeTarget "IsoTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F927552E96C60656F0B580 /* Debug */,
+				ED802ED58ED9EB7651E74CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FD36F84A1E851C6692800E3 /* Build configuration list for PBXNativeTarget "IsoTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4D8C58712F4738D79A1E3C /* Debug */,
+				83EDBFA5933EAFCFA2B006D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C44F7D238F6D89304946940C /* Build configuration list for PBXProject "IsoTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17AB78DF4C6C92491901D371 /* Debug */,
+				86C6B0262640EFF64B94A71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD974492854174A60923EF24 /* Build configuration list for PBXNativeTarget "IsoTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBCB66CD813D086BC52050C /* Debug */,
+				B2FBB30C904B22A183C36FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC54F8DA75D925CD85D7D335 /* Project object */;
+}

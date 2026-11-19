@@ -1,0 +1,14 @@
+// Signing and identity for every target.
+//
+// These defaults build and run in the Simulator as-is. To install on a device,
+// copy Local.xcconfig.example to Local.xcconfig (git-ignored) and set your own
+// team and bundle id there.
+//
+// The App Group is derived from the bundle id (group.<bundle id>) and is where
+// the app keeps its data, so once you've installed a build, keep the bundle id
+// the same or the next build starts with an empty course.
+
+ISOTRACK_BUNDLE_ID = com.example.isotrack
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"
