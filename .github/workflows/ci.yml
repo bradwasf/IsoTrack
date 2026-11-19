@@ -15,14 +15,15 @@ concurrency:
 jobs:
   test:
     name: Unit tests
-    runs-on: macos-26
+    # Xcode 27 image (public preview): needed for the iPhone Duo APIs.
+    runs-on: xcode-27
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
       - name: Select the newest Xcode
         run: |
-          XCODE=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          XCODE=$(ls -d /Applications/Xcode_27*.app | sort -V | tail -1)
           echo "Using $XCODE"
           sudo xcode-select -s "$XCODE"
           xcodebuild -version
