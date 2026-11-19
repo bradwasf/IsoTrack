@@ -1,5 +1,8 @@
 # IsoTrack
 
+[![CI](https://github.com/bradwasf/IsoTrack/actions/workflows/ci.yml/badge.svg)](https://github.com/bradwasf/IsoTrack/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 An isotretinoin cumulative-dose tracker for iPhone, written in SwiftUI and
 laid out for iPhone Duo: one column when the phone is closed, two fold-aware
 panes when it's open.
